@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Articles</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="form.js"></script>
+
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4" id="articles"></div>
+                <form>
+                    <div class="input-group input-group-sm mb-1">
+                        <div class="input-group">
+                            <span class="" id="inputGroup-sizing-sm">Author</span>
+                        </div>
+                        <input type="text" id="articleAuthor" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group">
+                            <span class="">Text</span>
+                        </div>
+                        <textarea class="form-control" aria-label="Text" id="articleText"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group">
+                            <span class="">Title</span>
+                        </div>
+                        <textarea class="form-control" aria-label="Title" id="articleTitle"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <button id="createArticle" class="btn btn-primary" onclick="create_article()">Submit</button>
+                    </div>
+                </form>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
